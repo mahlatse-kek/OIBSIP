@@ -1,15 +1,17 @@
 # Research Report: Social Engineering Attacks
 
 ## Introduction
-Social engineering is the psychological manipulation of people into performing actions or divulging confidential information. Unlike technical exploits, social engineering targets human behavior — trust, fear, urgency and curiosity making it one of the most effective and persistent attack vectors in cybersecurity.
+Social engineering is the psychological manipulation of people into performing actions or giving up confidential information, credentials or access rather than exploiting software. Unlike technical exploits, social engineering targets human behavior trust, fear, urgency and curiosity instead of code making it one of the most effective and persistent attack vectors in cybersecurity reason being it bypasses firewalls and endpoint protection.
 
 ## Types of Social Engineering Attacks
 
 ### 1. Phishing
-Phishing involves sending fraudulent emails or messages that appear to come from a legitimate source, tricking victims into revealing sensitive information (passwords, credit card numbers) or clicking malicious links. Variants include:
-- **Spear phishing** – is targeted at a specific individual or organization
-- **Whaling** – mostly targeted at high-profile executives
-- **Smishing/Vishing** – phishing through SMS's or voice calls
+Phishing involves sending fraudulent emails, websites or messages that appear to come from a legitimate source, tricking victims into revealing sensitive information such as passwords, credit card numbers or clicking malicious links which downloads malware.
+For Example:
+- **Spear Phishing** – Is highly targeted at a specific individual or organisation
+- **Whaling** – It is mostly targeted at high-profile executives
+- **Vishing** - A method conducted through voice calls whereby individuals impersonate bank customer service departments.
+- **Smishing** – A phishing method sent through SMS's commonly as fake delivery or bank alert messages.
 
 ### 2. Pretexting
 The attacker creates a fabricated scenario "pretext" to obtain information. For example, impersonating Information Technology support whether a bank official or a co-worker to gain trust and extract credentials or access.
