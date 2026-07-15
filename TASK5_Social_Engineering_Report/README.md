@@ -23,7 +23,7 @@ Between 2013 and 2015, a Lithuanian attacker impersonated a hardware supplier th
 ### 2. Pretexting
 The attacker creates a fabricated scenario "pretext" to obtain information. For example, impersonating Information Technology support whether a bank official or a co-worker to gain trust and extract credentials or access.
 
-**Real-world Case Studies:**
+**Real World Case Studies:**
 
 **Twitter Bitcoin Scam (2020):** Attackers used phone based social engineering (Vishing) to trick Twitter now known as "X" employees into providing credentials to internal tools, allowing takeover of high-profile accounts (Obama, Musk and Apple) to run a Bitcoin scam which compromised more than 100 high profile accounts including those of major public figues and companies.
 
@@ -70,7 +70,7 @@ Verizon Data Breach Investigations Report (DBIR) – Annual Report Covering Soci
 
 KnowBe4 – “Social Engineering” resource hub: https://www.knowbe4.com/what-is-social-engineering
 
-Krebs on Security – Coverage of The 2020 Twitter Bitcoin Scam: https://krebsonsecurity.com/2020/07/whos-behind-wednesdays-epic-twitter-hack/ or krebsonsecurity.com
+Krebs on Security – Coverage of The 2020 Twitter Bitcoin Scam: https://krebsonsecurity.com/2020/07/whos-behind-wednesdays-epic-twitter-hack/
 
 RSA – Official Statement on The 2011 SecurID Breach: https://www.rsa.com/?s=SECURID
 
