@@ -1,0 +1,56 @@
+## What is Wireshark?
+
+Wireshark is a free, open-source network protocol analyser. It captures traffic passing through a network interface in real time and lets you inspect individual packets down to the byte level which protocol they use, where they're going and in the case of unencrypted traffic their actual contents.
+
+## Installation
+
+Installed through the official Windows installer from wireshark.org, which bundles **Npcap**, a packet capture driver required for Wireshark to see live traffic on Windows. Installation required administrator permissions to install the Npcap driver.
+
+## Capture Summary
+
+- Interface used: Wi-Fi
+- Duration: 2+ minutes of live browsing traffic
+- Sites visited during capture:
+
+## Filters Applied
+
+### `http`
+Shows all HTTP unencrypted web traffic.
+
+### `dns`
+
+Shows DNS queries and responses, every domain-to-IP lookup made during the capture.
+
+### `tcp`
+
+Shows raw TCP-level traffic. Identified and annotated a complete 3-way handshake:
+- **SYN** — client requests a connection.
+- **SYN, ACK** — server acknowledges and responds.
+- **ACK** — client confirms and connection is established.
+
+## Unencrypted Data Found
+
+Filtered for `http` and inspected a GET request to [site]. The packet details pane showed the request in plain text, including [the exact URL path / headers / User-Agent describes what you actually saw. This traffic isn't encrypted, anyone capturing it on the same network; a shared Wi-Fi.
+## Why Unencrypted HTTP Traffic Is Dangerous:
+
+HTTP sends everything, the request itself, headers and in some cases form data or cookies as plain, readable text. Anyone positioned to intercept that traffic, a compromised router, a malicious actor on the same public Wi-Fi or an ISPcan read it without needing to break any encryption. HTTPS solves this by wrapping the same traffic in TLS encryption, so even if someone intercepts the packets, the contents are unreadable without the decryption key. This is why browsers now flag plain HTTP sites as "Not Secure" as the risk isn't hypothetical, it's exactly what this capture demonstrates.
+
+## Glossary
+
+- **Packet** — a small, formatted unit of data transmitted across a network, containing both the actual payload and metadata (source, destination, protocol) needed to route it.
+
+- **Protocol** — an agreed-upon set of rules that defines how devices communicate. For example: HTTP for web pages, DNS for name resolution).
+
+- **Port** — a numbered endpoint on a device that identifies which service traffic is meant for. For Example: port 80 for HTTP, 443 for HTTPS).
+
+- **Payload** — the actual data being carried inside a packet, as opposed to the header/metadata around it.
+
+- **Handshake** — the initial exchange of packets (like TCP's SYN, SYN-ACK, ACK) that establishes a connection between two devices before real data is sent.
+
+## Ethics Note
+This capture was performed exclusively on my own laptop's network interface, capturing only my own traffic on a network I own/control. No traffic belonging to other users or unauthorised networks was captured.
+
+## Executive Summary (for a non-technical manager)
+This exercise captured and inspected live network traffic to demonstrate a simple but important point: unencrypted (HTTP) traffic can be read by anyone with access to the same network, exposing whatever information is being sent including potentially sensitive data. The risk is low on a private, trusted network but significant on public or shared Wi-Fi.
+
+ The practical takeaway for the business is straightforward: any service or website still running on plain HTTP instead of HTTPS should be prioritized for migration, since the fix (enabling TLS/HTTPS) is well-understood and low-cost compared to the exposure it prevents.
