@@ -16,9 +16,17 @@ Software vulnerabilities are discovered constantly. Once a vulnerability is publ
 
 ## Challenges and How to Overcome Them
 
-- **Legacy systems:** Older systems may no longer receive vendor patches. Mitigation: isolate them on segmented networks and apply compensating controls (e.g., strict firewall rules) until they can be retired.
-- **Downtime concerns:** Patching critical systems often requires a reboot or service interruption. Mitigation: schedule maintenance windows and use redundant/failover systems to patch without full outages.
-- **Testing requirements:** Insufficient testing risks breaking production; excessive testing delays critical fixes. Mitigation: maintain a representative staging environment and set explicit, faster testing SLAs for critical/high-severity patches.
+- **Legacy Systems:** Older systems may no longer receive vendor patches.
+
+Mitigation: Isolate them on segmented networks and apply compensating controls. For Example: Strict firewall rules until they can be retired.
+
+- **Downtime Concerns:** Patching critical systems often requires a reboot or service interruption.
+
+Mitigation: schedule maintenance windows and use redundant/failover systems to patch without full outages.
+
+- **Testing Requirements:** Insufficient testing risks breaking production; excessive testing delays critical fixes.
+
+Mitigation: Maintain a representative staging environment and set explicit, faster testing SLAs for critical/high-severity patches.
 
 ## Consequences of Failing To Patch
 
@@ -34,13 +42,13 @@ Software vulnerabilities are discovered constantly. Once a vulnerability is publ
 - Reputational and financial damage
 
 ## Best Practices for Effective Patch Management
-1. **Maintain an asset inventory** – you can't patch what you don't know you have.
-2. **Prioritize by risk** – patch critical/high-severity vulnerabilities first (use CVSS scores).
-3. **Establish a regular patching schedule** – don't wait for incidents to force action.
-4. **Test patches before full deployment** – avoid breaking production systems.
-5. **Automate where possible** – use patch management tools (WSUS, SCCM, Ansible) to reduce human error.
-6. **Monitor and verify** – confirm patches were successfully applied across all systems.
-7. **Have a rollback plan** – in case a patch causes unexpected issues.
+1. **Maintain An Asset Inventory** – you can't patch what you don't know you have.
+2. **Prioritize By Risk** – patch critical/high-severity vulnerabilities first (use CVSS scores).
+3. **Establish A Regular Patching Schedule** – don't wait for incidents to force action.
+4. **Test Patches Before Full Deployment** – avoid breaking production systems.
+5. **Automate Where Possible** – use patch management tools (WSUS, SCCM, Ansible) to reduce human error.
+6. **Monitor And Verify** – confirm patches were successfully applied across all systems.
+7. **Have A Rollback Plan** – in case a patch causes unexpected issues.
 
 ## Conclusion
 Patch management is a simple, cost-effective defense that significantly reduces an organisation's attack surface. As shown by WannaCry and Equifax, the difference between a secure system and a costly breach is often just a delayed or missing patch. Organisations that treat patching as a continuous, prioritized process are far more resilient against cyber threats.
